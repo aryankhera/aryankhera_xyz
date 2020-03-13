@@ -1,0 +1,95 @@
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+html{
+    margin:0;
+    padding:0;
+    height: 100vh;
+    overflow: auto;
+}
+body {
+    font: 100% Roboto;
+    text-decoration: none;
+    color: white;
+    background-image: url(https://images.unsplash.com/photo-1500417148159-68083bd7333a);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+ul{
+    list-style: none;
+}
+
+main{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+main h1{
+    font-weight: 500;
+}
+main p{
+    font-size: 1.2em;
+}
+main a{
+    color:wheat;
+}
+
+@media screen and (max-width: 500px) {
+
+.large{
+    display: none;
+}
+}
+
+@media screen and (min-width: 500px) {
+
+.small{
+    display: none;
+}
+}
+
+.resume{
+    clip-path: polygon(0 0,100% 0, 100% 0,0 0);
+}
+
+/* Transition */
+
+.transition{
+    padding: 0;
+    display: flex;
+    position: absolute;
+    z-index: 10;
+    height: 100vh;
+    width: 100%;
+    top:0;
+    left: 0;
+    margin: 0;
+    pointer-events: none;
+}
+
+.transition li{
+    transform: scaleY(0);
+    background: white;
+    width: 20%;
+}
+
+
+.transitionOnce{
+    -webkit-clip-path: circle(0% at 0 0);
+    clip-path:circle(0% at 0 0);
+    background: teal;
+    padding: 0;
+    position: absolute;
+    z-index: 20;
+    height: 100vh;
+    width: 100%;
+    top:0;
+    left: 0;
+    margin: 0;
+    pointer-events: none;
+}
